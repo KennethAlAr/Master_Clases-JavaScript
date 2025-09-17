@@ -1,0 +1,21 @@
+*{
+    /* El selector universal sirve para maquetar todo lo que no tiene estilo*/
+    font-family: monospace;
+    font-size: 20px;
+}
+
+body {
+    /* Los selectores de etiqueta maqueta todos los elementos con esa etiqueta*/
+    background-color: rgb(31,30,30);
+    color: whitesmoke;
+}
+
+.item{
+    /* Los selectores de clase sirven para maquetar todos los elementos con esa clase */
+    color: green;
+}
+
+#parrafo{
+    /* Los selectores de id son específicos de un elemento y no se pueden repetir*/
+    color: red;
+}

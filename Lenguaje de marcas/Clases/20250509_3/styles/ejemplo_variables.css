@@ -1,0 +1,24 @@
+:root{
+    /* En root y con -- se cran variables para no tener que ir poniendo los mismos valores de propiedades todo el rato */
+    --primary-color: #1f1f1f;
+    --secondary-color: #e5e5e5;
+    --highlight-color: #f3a006;
+    --error-color: #e2113b;
+    --spacing: 20px;
+    --primary-font: "Arial", sans-serif;
+}
+
+body{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+a{
+    color: var(--primary-color);
+}
+
+a:hover{
+    color: var(--highlight-color);
+    padding: var(--spacing);
+}

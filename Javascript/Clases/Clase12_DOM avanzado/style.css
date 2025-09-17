@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, footer {
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+main > ul {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+main li{
+    padding: 20px;
+    border: 1px dashed black;
+    text-align: center;
+}
+
+.back {
+    display: none;
+    margin-left: 20px;
+}
+
+main li div {
+    width: 100%;
+    height: 250px;
+}
+
+main li img{
+    width: 80%;
+}
+
+main li:hover > div > img{
+    display: none;
+}
+
+main li:hover > div > img + .back {
+    display: block;
+}
+
+.grass:hover {
+    background-color: rgb(85, 164, 128);
+    transition: 0.3s ease;
+}
+
+.fire:hover {
+    background-color: rgb(240,145,70);
+    transition: 0.3s ease;
+}
+
+.water:hover {
+    background-color: rgb(141, 181, 172);
+    transition: 0.3s ease;
+}
+
+.bug:hover {
+    background-color: rgb(195, 252, 103);
+    transition: 0.3s ease;
+}
+
+.normal:hover {
+    background-color: rgb(231, 211, 210);
+    transition: 0.3s ease;
+}
+
+.poison:hover {
+    background-color: rgb(194, 133, 192);
+    transition: 0.3s ease;
+}
+
+.electric:hover {
+    background-color: rgb(243, 207, 63);
+    transition: 0.3s ease;
+}
